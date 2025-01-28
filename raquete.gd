@@ -1,5 +1,5 @@
-extends Node2D
-
+extends Sprite2D
+var velox: int = 100
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -8,4 +8,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if Input.is_action_pressed("dire"):
+		position.x = position.x + velox + delta

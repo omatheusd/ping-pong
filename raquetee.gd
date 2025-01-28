@@ -8,5 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_pressed("dire"):
-		position.x = position.x + velox + delta
+	elif Input.is_action_pressed("esq"):
+		position.x = position.x - velox + delta
+	if position.x >= 1000:
+		position.x	= 1000
+	elif position.x <= 80:
+		position.x = 80
