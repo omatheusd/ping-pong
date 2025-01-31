@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cph7noxrf4560"]
+
+[ext_resource type="PackedScene" uid="uid://bqj7xqxgk5bnq" path="res://cenas/fundo.tscn" id="1_gphgq"]
+[ext_resource type="PackedScene" uid="uid://dj0buh4stdgc0" path="res://cenas/raquete_2.tscn" id="2_wamdh"]
+[ext_resource type="PackedScene" uid="uid://cjlcgueao6ufu" path="res://cenas/raquete_1.tscn" id="3_olk3o"]
+[ext_resource type="PackedScene" uid="uid://faonmgpcovn5" path="res://cenas/bola.tscn" id="4_1ayby"]
+
+[node name="principal" type="Node2D"]
+
+[node name="fundo" parent="." instance=ExtResource("1_gphgq")]
+position = Vector2(2, 1)
+
+[node name="NaoEprimeiraraq" parent="." instance=ExtResource("2_wamdh")]
+position = Vector2(1123, 358)
+scale = Vector2(0.9, 0.9)
+
+[node name="RAQUETE1" parent="." instance=ExtResource("3_olk3o")]
+position = Vector2(42, 360)
+scale = Vector2(0.95, 0.95)
+
+[node name="bola" parent="." instance=ExtResource("4_1ayby")]
+position = Vector2(587, 204)
+scale = Vector2(1.6, 1.6)

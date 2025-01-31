@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj0buh4stdgc0"]
+
+[ext_resource type="Script" path="res://scripts/nao_eprimeiraraq.gd" id="1_jkb2x"]
+[ext_resource type="Texture2D" uid="uid://dadm4x23yxgx" path="res://imagens/raquete inim.png" id="1_kxxp7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xdwle"]
+size = Vector2(208, 20)
+
+[node name="Raquete2" type="Node2D"]
+rotation = 1.5708
+script = ExtResource("1_jkb2x")
+
+[node name="RaqueteInim" type="Sprite2D" parent="."]
+texture = ExtResource("1_kxxp7")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_xdwle")

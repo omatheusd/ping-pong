@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://faonmgpcovn5"]
+
+[ext_resource type="Texture2D" uid="uid://bdkotgccfk28k" path="res://imagens/bomba-removebg-preview.png" id="1_sxtom"]
+[ext_resource type="Script" path="res://scripts/bola.gd" id="1_vsgk2"]
+
+[node name="bola" type="Node2D"]
+script = ExtResource("1_vsgk2")
+
+[node name="Bomba" type="Sprite2D" parent="."]
+scale = Vector2(0.077, 0.079)
+texture = ExtResource("1_sxtom")
+
+[node name="Sprite2D" type="Area2D" parent="."]
+scale = Vector2(0.077, 0.079)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D"]
+polygon = PackedVector2Array(-38.961, -139.241, 38.961, -151.899, 77.9221, -88.6076, 116.883, -25.3165, 129.87, 25.3165, 129.87, 101.266, 90.9091, 139.241, -25.974, 151.899, -77.9221, 126.582, -103.896, 50.6329, -103.896, 0, -38.961, -50.6329, 12.987, -101.266, -51.9481, -139.241, -12.987, -164.557, 12.987, -177.215)
