@@ -1,5 +1,6 @@
 extends Node2D
-
+var ponto1
+var ponto2 
 var speedy = 200
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,3 +18,8 @@ func _process(delta: float) -> void:
 	elif position.y >= 560:
 		position.y = 560
 	
+func retornaPonto () -> int:
+	return ponto1
+
+func resetPonto () -> void:
+	ponto1 = 0

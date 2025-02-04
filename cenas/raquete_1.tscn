@@ -19,3 +19,5 @@ texture = ExtResource("1_57rv7")
 position = Vector2(4.73062e-06, 0)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_fmufd")
+
+[connection signal="area_entered" from="AreaDaraquete" to="." method="acertouraquete"]

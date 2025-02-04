@@ -1,9 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://bqj7xqxgk5bnq"]
 
-[ext_resource type="Texture2D" uid="uid://mkckqiyjn2i7" path="res://imagens/fundo.png" id="1_6lijl"]
+[ext_resource type="Texture2D" uid="uid://bumv25taay5o7" path="res://imagens/1000_F_159705059_ZixnySrj9VWw0m1outNV5B3Bgoqf2osS.jpg" id="1_srw64"]
 
 [node name="fundo" type="Node2D"]
 
-[node name="Fundo" type="Sprite2D" parent="."]
-position = Vector2(574, 325)
-texture = ExtResource("1_6lijl")
+[node name="fundo" type="Sprite2D" parent="."]
+position = Vector2(575.75, 343.5)
+scale = Vector2(1.1595, 0.926667)
+texture = ExtResource("1_srw64")
